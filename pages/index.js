@@ -13,6 +13,7 @@ export default function Home() {
       const res = await axios.get("api/countries/", {
         params: { countryName },
       });
+      console.log(res);
       const { data } = res;
       setResponse(data.data.countries.edges);
     } catch (error) {
@@ -21,6 +22,7 @@ export default function Home() {
   };
 
   return (
+    
     <div className="flex flex-col relative font-roboto items-center min-h-screen ">
      
       {/* <div> */}
@@ -32,7 +34,15 @@ export default function Home() {
         alt="Logo"
         className="mt-10"
       />
-      <div className="mt-3 sm:mx-auto justify-center sm:w-full sm:flex">
+          
+      <div className="mt-3 sm:mx-auto justify-center sm:w-full sm:flex padder">
+        <style jsx>{`
+        .padder {
+          padding-left: 2em !important;
+          padding-right: 2em !important;
+          text-align: center !important; 
+        }
+      `}</style>
         <h3 className="text-2xl mt-6 font-roboto">
           Query the GraphQL API by inputting a Country name below.
         </h3>
@@ -61,7 +71,7 @@ export default function Home() {
         <div className="sm:mx-auto justify-center sm:w-full sm:flex">
           
           
-          <div className="mt-6 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="mt-6 grid grid-cols-1 gap-8">
           
           {/* <h3 className="text-secondary text-2xl clearfix">Search Results</h3> */}
 
@@ -89,7 +99,17 @@ export default function Home() {
                       Currency:
                       <span className="ml-2 font-bold text-base">
                         {item.node.currencyCodes[0]}
+                        {console.log(item.node)}
                       </span>
+                      
+                      {/* Calling Code:
+                      <span className="ml-2 font-bold text-base">
+                        {item.node.callingCode}
+                      </span>
+                      Region:
+                      <span className="ml-2 font-bold text-base">
+                        {item.node.region}
+                      </span> */}
                     </div>
                   </div>
                 </div>
