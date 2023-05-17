@@ -1,10 +1,11 @@
 ![cover](assets/cover.png)
 
 <div align="center">
-	<h2>Example Next.js App with GraphQL API</h2>
+	<h2>GlobalFind -- a NextJS App with GraphQL API</h2>
+	<p>Fetch country data to gain insights</p>
 </div>
 
-> [Live Preview](https://rapidapi-example-graphql-app.vercel.app/)
+> [Live Preview](https://global-find.netlify.app/)
 
 ### ⚡️ Features
 
@@ -16,13 +17,9 @@
 
 ### 🛠️ Installation Steps
 
-1. Download the `graphql-app` directory. Click [here](https://download-directory.github.io/?url=https://github.com/RapidAPI/DevRel-Examples-External/tree/main/graphql-app) to download it.
+1. Download the source code above. 
 
 2. Unzip the downloaded file and navigate to the working directory.
-
-```bash
-cd RapidAPI\ DevRel-Examples-External\ main\ graphql-app/
-```
 
 3. Install dependencies
 
