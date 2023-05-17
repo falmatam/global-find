@@ -1,6 +1,7 @@
 <div align="center">
 	<h2>GlobalFind -- a NextJS App with GraphQL API</h2>
 </div>
+
 ![cover](assets/cover.png)
 
 
