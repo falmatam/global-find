@@ -44,7 +44,7 @@ export default function Home() {
         }
       `}</style>
         <h3 className="text-2xl mt-6 font-roboto">
-          Query the GraphQL API by inputting a Country name below.
+          Query the GraphQL API and access valuable Country data.
         </h3>
       </div>
 
@@ -52,7 +52,7 @@ export default function Home() {
         <input
           type="text"
           className="block border border-transparent rounded-md px-5 py-3 text-base text-background shadow-sm focus:outline-none focus:border-transparent focus:ring-2 focus:ring-active"
-          placeholder="Search for any country using full name or first few letters"
+          placeholder="Input a Country Name"
           onChange={(e) => setCountryName(e.target.value)}
         />
 
